@@ -195,6 +195,7 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+build/config.ini
 
 # PyBuilder
 .pybuilder/
