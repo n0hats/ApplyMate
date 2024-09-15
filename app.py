@@ -12,12 +12,14 @@ import nltk
 from PyPDF2 import PdfReader
 from datetime import datetime, timezone
 from sqlalchemy import event
+from build.config import Config
 
 # Download NLTK data
 nltk.download('stopwords')
 nltk.download('wordnet')
 
 app = Flask(__name__)
+app.config.from_object(Config)
 
 
 # Set secret key for session management and flashing messages
