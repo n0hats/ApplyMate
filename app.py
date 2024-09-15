@@ -31,7 +31,7 @@ config = configparser.ConfigParser()
 
 try:
     # Attempt to read the configuration file
-    config.read("build/config_backup.ini")
+    config.read("build/config.ini")
 
     # Access the database connection string
     app.config['SQLALCHEMY_DATABASE_URI'] = config['database']['conn']
